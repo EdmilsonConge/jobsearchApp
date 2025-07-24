@@ -1,0 +1,14 @@
+GET http://localhost:8080/job-posting/6881406c05a7f49d4e66a961
+###
+POST https://examples.http-client.intellij.net/post
+Content-Type: application/json
+
+{
+  "profile": "java developer",
+  "description": "19 years old java dev for Ares",
+  "experience": "12",
+  "techs": ["springboot", "react", "java"]
+}
+
+
+
