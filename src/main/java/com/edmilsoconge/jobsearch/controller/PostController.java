@@ -1,6 +1,6 @@
 package com.edmilsoconge.jobsearch.controller;
 
-import com.edmilsoconge.jobsearch.PostDTO;
+import com.edmilsoconge.jobsearch.dto.PostDTO;
 import com.edmilsoconge.jobsearch.service.PostService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.ResponseEntity;

@@ -1,7 +1,7 @@
 package com.edmilsoconge.jobsearch.service;
 
-import com.edmilsoconge.jobsearch.PostDTO;
-import com.edmilsoconge.jobsearch.PostMapper;
+import com.edmilsoconge.jobsearch.dto.PostDTO;
+import com.edmilsoconge.jobsearch.mapper.PostMapper;
 import com.edmilsoconge.jobsearch.model.Post;
 import com.edmilsoconge.jobsearch.repository.PostRepository;
 import org.springframework.stereotype.Service;

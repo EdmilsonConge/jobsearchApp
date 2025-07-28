@@ -1,5 +1,6 @@
-package com.edmilsoconge.jobsearch;
+package com.edmilsoconge.jobsearch.mapper;
 
+import com.edmilsoconge.jobsearch.dto.PostDTO;
 import com.edmilsoconge.jobsearch.model.Post;
 
 public class PostMapper {

@@ -1,4 +1,4 @@
-package com.edmilsoconge.jobsearch;
+package com.edmilsoconge.jobsearch.dto;
 
 import java.util.List;
 
