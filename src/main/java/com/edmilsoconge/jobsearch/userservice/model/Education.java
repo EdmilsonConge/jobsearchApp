@@ -10,20 +10,22 @@ import java.util.Objects;
 public class Education {
     @Id
     private String id;
-    private String nameOfEducation;
+    private String title;
+    private String degree;
     private LocalDate dateOfConclusion;
-    private String locationOfEducation;
+    private String institution;
     private String description;
 
-    public Education(String id, String nameOfEducation, LocalDate dateOfConclusion, String locationOfEducation, String description) {
-        this.id = id;
-        this.nameOfEducation = nameOfEducation;
-        this.dateOfConclusion = dateOfConclusion;
-        this.locationOfEducation = locationOfEducation;
-        this.description = description;
+    public Education() {
     }
 
-    public Education() {
+    public Education(String id, String title, LocalDate dateOfConclusion, String degree, String institution, String description) {
+        this.id = id;
+        this.title = title;
+        this.dateOfConclusion = dateOfConclusion;
+        this.degree = degree;
+        this.institution = institution;
+        this.description = description;
     }
 
     public String getId() {
@@ -34,12 +36,20 @@ public class Education {
         this.id = id;
     }
 
-    public String getNameOfEducation() {
-        return nameOfEducation;
+    public String getDegree() {
+        return degree;
     }
 
-    public void setNameOfEducation(String nameOfEducation) {
-        this.nameOfEducation = nameOfEducation;
+    public void setDegree(String degree) {
+        this.degree = degree;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public LocalDate getDateOfConclusion() {
@@ -50,12 +60,12 @@ public class Education {
         this.dateOfConclusion = dateOfConclusion;
     }
 
-    public String getLocationOfEducation() {
-        return locationOfEducation;
+    public String getInstitution() {
+        return institution;
     }
 
-    public void setLocationOfEducation(String locationOfEducation) {
-        this.locationOfEducation = locationOfEducation;
+    public void setInstitution(String institution) {
+        this.institution = institution;
     }
 
     public String getDescription() {
@@ -70,21 +80,22 @@ public class Education {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Education education)) return false;
-        return Objects.equals(getId(), education.getId()) && Objects.equals(getNameOfEducation(), education.getNameOfEducation()) && Objects.equals(getDateOfConclusion(), education.getDateOfConclusion()) && Objects.equals(getLocationOfEducation(), education.getLocationOfEducation()) && Objects.equals(getDescription(), education.getDescription());
+        return Objects.equals(getId(), education.getId()) && Objects.equals(getTitle(), education.getTitle()) && Objects.equals(getDegree(), education.getDegree()) && Objects.equals(getDateOfConclusion(), education.getDateOfConclusion()) && Objects.equals(getInstitution(), education.getInstitution()) && Objects.equals(getDescription(), education.getDescription());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getNameOfEducation(), getDateOfConclusion(), getLocationOfEducation(), getDescription());
+        return Objects.hash(getId(), getTitle(), getDegree(), getDateOfConclusion(), getInstitution(), getDescription());
     }
 
     @Override
     public String toString() {
         return "Education{" +
                 "id='" + id + '\'' +
-                ", nameOfEducation='" + nameOfEducation + '\'' +
+                ", title='" + title + '\'' +
+                ", degree='" + degree + '\'' +
                 ", dateOfConclusion=" + dateOfConclusion +
-                ", locationOfEducation='" + locationOfEducation + '\'' +
+                ", institution='" + institution + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
